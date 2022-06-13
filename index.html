@@ -8,6 +8,12 @@
       * {
         font-family: "Didact Gothic", sans-serif;
       }
+      .sampleHover {
+        transition: 0.5s ease;
+      }
+      .sampleHover:hover {
+        background-color: blueviolet;
+      }
     </style>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -50,43 +56,47 @@
     <!-- FORM Starts here -->
     <form action="checkout.html" method="">
       <!-- Table starts here -->
-      <div class="container mt-5 table-responsive-lg">
-        <table class="table align-middle text-center table-light table-hover">
+      <div class="container-fluid mt-5">
+        <table class="table text-center align-middle">
           <!-- Title heads -->
-          <thead class="border border-secondary align-middle table-dark">
-            <th>Book Cover</th>
-            <th>Book Title</th>
-            <th>Author</th>
-            <th>Date Published</th>
-            <th colspan="3">Action</th>
+          <thead class="col-12 table-dark">
+            <th class="col-md-2 col-lg-2">Book Cover</th>
+            <th class="col-md-2 col-lg-2">Book Title</th>
+            <th class="col-md-2 col-lg-2">Author</th>
+            <th class="col-md-2 col-lg-2">Date Published</th>
+            <th class="col-md-2 col-lg-2">Action</th>
           </thead>
           <!-- 1st row of data -->
-          <tr class="border border-secondary">
-            <td>
-              <img src="./image1.jpg" alt="" width="200" class="rounded" />
-            </td>
-            <td class="">To Kill a Mockingbird</td>
-            <td class="">Harper Lee</td>
-            <td class="">July 11, 1960</td>
+          <tr class="">
             <td class="">
+              <img src="./image1.jpg" alt="" class="rounded img-fluid" />
+            </td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>July 11, 1960</td>
+            <td>
               <input
                 type="button"
                 value="Add to Cart"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark mb-2 me-lg-2"
               />
               <input
                 type="button"
                 value="Add to Wishlist"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark mb-2"
               />
-              <input type="submit" value="Buy Now" class="btn btn-success" />
+              <input
+                type="submit"
+                value="Buy Now"
+                class="btn btn-success mb-2"
+              />
             </td>
           </tr>
 
           <!-- 2nd row of data -->
-          <tr class="border border-secondary">
-            <td>
-              <img src="./image2.jpg" alt="" width="200" class="rounded" />
+          <tr class="">
+            <td class="">
+              <img src="./image2.jpg" alt="" class="rounded img-fluid" />
             </td>
             <td class="">The Great Gatsby</td>
             <td class="">F. Scott Fitzerald</td>
@@ -95,21 +105,25 @@
               <input
                 type="button"
                 value="Add to Cart"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark mb-2 me-lg-2"
               />
               <input
                 type="button"
                 value="Add to Wishlist"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark mb-2"
               />
-              <input type="submit" value="Buy Now" class="btn btn-success" />
+              <input
+                type="submit"
+                value="Buy Now"
+                class="btn btn-success mb-2"
+              />
             </td>
           </tr>
 
           <!-- 3rd row of data -->
-          <tr class="border border-secondary">
-            <td>
-              <img src="./image3.jpg" alt="" width="200" class="rounded" />
+          <tr class="">
+            <td class="">
+              <img src="./image3.jpg" alt="" class="rounded img-fluid" />
             </td>
             <td class="">Nineteen Eighty-Four</td>
             <td class="">George Orwell</td>
@@ -118,44 +132,52 @@
               <input
                 type="button"
                 value="Add to Cart"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark mb-2 me-lg-2"
               />
               <input
                 type="button"
                 value="Add to Wishlist"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark mb-2"
               />
-              <input type="submit" value="Buy Now" class="btn btn-success" />
+              <input
+                type="submit"
+                value="Buy Now"
+                class="btn btn-success mb-2"
+              />
             </td>
           </tr>
 
           <!-- 4th row of data -->
-          <tr class="border border-secondary">
-            <td>
-              <img src="./image4.jpg" alt="" width="200" class="rounded" />
+          <tr class="">
+            <td class="">
+              <img src="./image4.jpg" alt="" class="rounded img-fluid" />
             </td>
             <td class="">Adventures of Huckleberry</td>
             <td class="">Mark Twain</td>
             <td class="">1884</td>
-            <td class="">
+            <td>
               <input
                 type="button"
                 value="Add to Cart"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark mb-2 me-lg-2"
               />
               <input
                 type="button"
                 value="Add to Wishlist"
-                class="btn btn-outline-dark"
+                class="btn btn-outline-dark mb-2"
               />
-              <input type="submit" value="Buy Now" class="btn btn-success" />
+              <input
+                type="submit"
+                value="Buy Now"
+                class="btn btn-success mb-2"
+              />
             </td>
           </tr>
 
           <!-- Checkout Button -->
           <tr class="">
-            <td colspan="4" class="border-0 bg-white"></td>
-            <td colspan="3" class="border-0 bg-white">
+            <td colspan="3" class="border-0 bg-white"></td>
+            <td colspan="2" class="border-0 bg-white">
               <input
                 type="submit"
                 value="Proceed to Checkout"
